@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RPLPhotoLibraryView/RPLPhotoLibraryViewProtocols.h>
+#import "RPLPhotoLibraryViewProtocols.h"
 
 
 

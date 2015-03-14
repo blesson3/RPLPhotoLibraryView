@@ -5,11 +5,11 @@
 //  Copyright (c) 2015 ShimmurInc. All rights reserved.
 //
 
-#import <RPLPhotoLibraryView/RPLPhotoLibraryView.h>
-#import <RPLPhotoLibraryView/RPLPhotoLibraryCollectionViewCell.h>
+#import "RPLPhotoLibraryView.h"
+#import "RPLPhotoLibraryCollectionViewCell.h"
 
-#import <ResplendentUtilities/RUConditionalReturn.h>
-#import <ResplendentUtilities/RUDLog.h>
+#import "RUConditionalReturn.h"
+#import "RUDLog.h"
 
 #import <AssetsLibrary/AssetsLibrary.h>
 
