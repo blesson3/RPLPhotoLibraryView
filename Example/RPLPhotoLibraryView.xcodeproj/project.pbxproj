@@ -24,6 +24,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		FC43AEF961BBB0102D1A7C03 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF37C75F5BE81C3BD45FE0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				29735642BB42967A1DBD625E /* libPods-RPLPhotoLibraryView.a in Frameworks */,
+				FC43AEF961BBB0102D1A7C03 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +531,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAC83CFB9BEFBD9A957D9C6A /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPLPhotoLibraryView.app/RPLPhotoLibraryView";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -552,7 +553,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC819D36D996572DB6A4BBCA /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPLPhotoLibraryView.app/RPLPhotoLibraryView";
 				FRAMEWORK_SEARCH_PATHS = (
