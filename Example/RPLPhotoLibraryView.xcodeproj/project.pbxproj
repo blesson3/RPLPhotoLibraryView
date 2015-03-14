@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04BECB57AD866972CBDD0AD1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF37C75F5BE81C3BD45FE0 /* libPods.a */; };
 		29735642BB42967A1DBD625E /* libPods-RPLPhotoLibraryView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A53A81ED12D0898770BB35 /* libPods-RPLPhotoLibraryView.a */; };
 		2AAF6AFA75907CC3B3A530F0 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AD06CDEE7EE6AD7D494C8C /* libPods-Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -82,7 +81,6 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				29735642BB42967A1DBD625E /* libPods-RPLPhotoLibraryView.a in Frameworks */,
-				04BECB57AD866972CBDD0AD1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -503,7 +501,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A46109A76DEDA521DE3C9123 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D246BB682B78D3F93BEB5591 /* Pods-RPLPhotoLibraryView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -517,7 +515,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC394ECE7512A096C2BAFFE9 /* Pods.release.xcconfig */;
+			baseConfigurationReference = BA479B455BD769DD2B60AD68 /* Pods-RPLPhotoLibraryView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
