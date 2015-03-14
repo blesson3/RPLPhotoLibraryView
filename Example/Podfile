@@ -1,5 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+#platform :ios, '6.0'
+pod 'ResplendentUtilities', '0.1.1'
+
 target 'RPLPhotoLibraryView', :exclusive => true do
   pod "RPLPhotoLibraryView", :path => "../"
 end
