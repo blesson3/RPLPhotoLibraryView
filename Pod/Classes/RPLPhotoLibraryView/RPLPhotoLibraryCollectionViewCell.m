@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 ShimmurInc. All rights reserved.
 //
 
-#import <RPLPhotoLibraryView/RPLPhotoLibraryCollectionViewCell.h>
+#import "RPLPhotoLibraryCollectionViewCell.h"
 
 
 
