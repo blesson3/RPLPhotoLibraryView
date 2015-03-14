@@ -14,12 +14,12 @@ target 'RPLPhotoLibraryView', :exclusive => true do
   import_pods
 end
 
-#target 'Tests', :exclusive => true do
-#  pod "RPLPhotoLibraryView", :path => "../"
-#
-#  pod 'Specta'
-#  pod 'Expecta'
-#  pod 'FBSnapshotTestCase'
-#  pod 'Expecta+Snapshots'
-#  import_pods
-#end
+target 'Tests', :exclusive => true do
+  pod "RPLPhotoLibraryView", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  import_pods
+end

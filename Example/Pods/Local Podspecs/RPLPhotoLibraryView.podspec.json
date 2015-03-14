@@ -20,5 +20,10 @@
     "RPLPhotoLibraryView": [
       "Pod/Assets/*.png"
     ]
+  },
+  "dependencies": {
+    "ResplendentUtilities": [
+      "0.1.1"
+    ]
   }
 }

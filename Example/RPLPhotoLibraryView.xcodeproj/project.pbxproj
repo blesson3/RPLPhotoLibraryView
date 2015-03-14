@@ -531,6 +531,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC83CFB9BEFBD9A957D9C6A /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPLPhotoLibraryView.app/RPLPhotoLibraryView";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -553,6 +554,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC819D36D996572DB6A4BBCA /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPLPhotoLibraryView.app/RPLPhotoLibraryView";
 				FRAMEWORK_SEARCH_PATHS = (
