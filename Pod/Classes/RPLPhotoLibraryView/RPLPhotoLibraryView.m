@@ -143,13 +143,11 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	__weak typeof(self) weakSelf = self;
 	[self.assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
 
-		RUDLog(@"!!");
 		*stop = YES;
 
 		if ((stopped == false) && (*stop == YES))
 		{
 			stopped = YES;
-			RUDLog(@"stopped");
 			if (weakSelf)
 			{
 				dispatch_async(dispatch_get_main_queue(), ^{
