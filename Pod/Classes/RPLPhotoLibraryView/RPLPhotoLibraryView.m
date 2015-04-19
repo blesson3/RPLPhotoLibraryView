@@ -29,6 +29,7 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 @property (nonatomic, assign) BOOL isEnumeratingAssetsLibrary;
 
 @property (nonatomic, strong) ALAssetsGroup* currentAssetsGroup;
+-(NSInteger)assetIndexForIndexPath:(NSIndexPath*)indexPath;
 -(ALAsset*)assetAtIndexPath:(NSIndexPath*)indexPath;
 
 @property (nonatomic, readonly) UICollectionViewFlowLayout* collectionViewFlowLayout;
@@ -180,15 +181,33 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	[self.collectionView reloadData];
 }
 
-#pragma mark - Assets
+#pragma mark - Data Source
+-(NSInteger)assetIndexForIndexPath:(NSIndexPath*)indexPath
+{
+	NSInteger index = indexPath.row;
+
+	NSInteger numberOfAssets = self.currentAssetsGroup.numberOfAssets;
+	kRUConditionalReturn_ReturnValue(numberOfAssets == 0, YES, NSNotFound);
+	kRUConditionalReturn_ReturnValue(index >= numberOfAssets, YES, NSNotFound);
+
+	if (self.reverseAssetOrder)
+	{
+		index = numberOfAssets - 1 - index;
+	}
+
+	return index;
+}
+
 -(ALAsset*)assetAtIndexPath:(NSIndexPath*)indexPath
 {
 	kRUConditionalReturn_ReturnValueNil(self.currentAssetsGroup == nil, YES);
-	kRUConditionalReturn_ReturnValueNil((indexPath.row >= self.currentAssetsGroup.numberOfAssets), YES);
+
+	NSInteger index = [self assetIndexForIndexPath:indexPath];
+	kRUConditionalReturn_ReturnValueNil((index >= self.currentAssetsGroup.numberOfAssets), YES);
 	
 	__block ALAsset* asset = nil;
 	
-	[self.currentAssetsGroup enumerateAssetsAtIndexes:[NSIndexSet indexSetWithIndex:indexPath.row] options:NSEnumerationConcurrent usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+	[self.currentAssetsGroup enumerateAssetsAtIndexes:[NSIndexSet indexSetWithIndex:index] options:NSEnumerationConcurrent usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
 		if (result)
 		{
 			asset = result;
@@ -203,6 +222,16 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 -(void)scrollToTop:(BOOL)animated
 {
 	[self.collectionView setContentOffset:CGPointZero animated:animated];
+}
+
+#pragma mark - reverseAssetOrder
+-(void)setReverseAssetOrder:(BOOL)reverseAssetOrder
+{
+	kRUConditionalReturn(self.reverseAssetOrder == reverseAssetOrder, NO);
+
+	_reverseAssetOrder = reverseAssetOrder;
+
+	[self.collectionView reloadData];
 }
 
 @end

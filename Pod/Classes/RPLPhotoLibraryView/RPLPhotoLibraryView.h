@@ -16,6 +16,7 @@
 @interface RPLPhotoLibraryView : UIView
 
 @property (nonatomic, assign) id<RPLPhotoLibraryView_assetSelectionDelegate> assetSelectionDelegate;
+@property (nonatomic, assign) BOOL reverseAssetOrder;
 
 -(void)scrollToTop:(BOOL)animated;
 
