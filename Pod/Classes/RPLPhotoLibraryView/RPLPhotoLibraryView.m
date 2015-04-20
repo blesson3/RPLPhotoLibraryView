@@ -114,6 +114,39 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	return self.bounds;
 }
 
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:collectionViewWillBeginDragging:)])
+	{
+		[self.scrollDelegate photoLibraryView:self collectionViewWillBeginDragging:self.collectionView];
+	}
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:didScrollWithCollectionView:)])
+	{
+		[self.scrollDelegate photoLibraryView:self didScrollWithCollectionView:self.collectionView];
+	}
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:collectionViewWillEndDragging:withVelocity:targetContentOffset:)])
+	{
+		[self.scrollDelegate photoLibraryView:self collectionViewWillEndDragging:self.collectionView withVelocity:velocity targetContentOffset:targetContentOffset];
+	}
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:collectionViewDidEndDragging:willDecelerate:)])
+	{
+		[self.scrollDelegate photoLibraryView:self collectionViewDidEndDragging:self.collectionView willDecelerate:decelerate];
+	}
+}
+
 #pragma mark - UICollectionViewDataSource,UICollectionViewDelegate
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {

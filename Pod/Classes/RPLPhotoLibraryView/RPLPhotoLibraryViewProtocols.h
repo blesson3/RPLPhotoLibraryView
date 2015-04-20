@@ -24,3 +24,17 @@
 -(void)photoLibraryView:(RPLPhotoLibraryView*)photoLibraryView didSelectAsset:(ALAsset*)asset;
 
 @end
+
+
+
+
+
+@protocol RPLPhotoLibraryView_scrollDelegate <NSObject>
+
+@optional
+-(void)photoLibraryView:(RPLPhotoLibraryView*)photoLibraryView collectionViewWillBeginDragging:(UICollectionView *)collectionView;
+-(void)photoLibraryView:(RPLPhotoLibraryView*)photoLibraryView didScrollWithCollectionView:(UICollectionView*)collectionView;
+-(void)photoLibraryView:(RPLPhotoLibraryView*)photoLibraryView collectionViewWillEndDragging:(UICollectionView *)collectionView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset;
+-(void)photoLibraryView:(RPLPhotoLibraryView*)photoLibraryView collectionViewDidEndDragging:(UICollectionView *)collectionView willDecelerate:(BOOL)decelerate;
+
+@end
