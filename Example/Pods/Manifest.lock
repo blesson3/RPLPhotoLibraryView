@@ -1,19 +1,18 @@
 PODS:
-  - Expecta (0.3.2)
-  - Expecta+Snapshots (1.3.1):
-    - Expecta
-    - FBSnapshotTestCase
-  - FBSnapshotTestCase (1.5)
-  - ResplendentUtilities (0.1.1)
-  - RPLPhotoLibraryView (0.1.0):
-    - ResplendentUtilities (= 0.1.1)
-  - Specta (0.4.0)
+  - Expecta (1.0.0)
+  - Expecta+Snapshots (1.3.4):
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase (~> 1.8)
+  - FBSnapshotTestCase (1.8.1)
+  - ResplendentUtilities (0.2.10)
+  - RPLPhotoLibraryView (0.1.2):
+    - ResplendentUtilities (~> 0.2)
+  - Specta (1.0.2)
 
 DEPENDENCIES:
   - Expecta
   - Expecta+Snapshots
   - FBSnapshotTestCase
-  - ResplendentUtilities (= 0.1.1)
   - RPLPhotoLibraryView (from `../`)
   - Specta
 
@@ -22,11 +21,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
-  Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
-  FBSnapshotTestCase: e2914fbaabccea1dcc773d6a16b1c24540642488
-  ResplendentUtilities: eeec85126b179bf036c2f8b876d31bd4b44bfb80
-  RPLPhotoLibraryView: 5167731430645de143319c701fd4f088b41783f8
-  Specta: 1df326d6ec48603c77f507a0ab1f89ad2df1c582
+  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
+  Expecta+Snapshots: ca15bfb57e7a0f78f86c7699c2c54ffacfa4ad2a
+  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
+  ResplendentUtilities: 250f086ae2d01abb8d263f59bd079d407f52bdcb
+  RPLPhotoLibraryView: 276aac4b796b0642e3289c3cf77e6c4ae686104b
+  Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.37.2

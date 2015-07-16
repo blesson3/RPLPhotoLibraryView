@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29735642BB42967A1DBD625E /* libPods-RPLPhotoLibraryView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A53A81ED12D0898770BB35 /* libPods-RPLPhotoLibraryView.a */; };
-		2AAF6AFA75907CC3B3A530F0 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AD06CDEE7EE6AD7D494C8C /* libPods-Tests.a */; };
+		4E94934087563402E3FB53E0 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E261280A41A4E811819F373 /* Pods_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -24,6 +23,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		F3516BC02D52AECCB5A00239 /* Pods_RPLPhotoLibraryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A32EC94E2223515C1A8B7B4 /* Pods_RPLPhotoLibraryView.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FC43AEF961BBB0102D1A7C03 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF37C75F5BE81C3BD45FE0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E261280A41A4E811819F373 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A7FA2449EF07BD49F55BAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		44AD06CDEE7EE6AD7D494C8C /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E639DF625BDC8BA84AE971 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5A32EC94E2223515C1A8B7B4 /* Pods_RPLPhotoLibraryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPLPhotoLibraryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* RPLPhotoLibraryView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPLPhotoLibraryView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +63,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		87A53A81ED12D0898770BB35 /* libPods-RPLPhotoLibraryView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPLPhotoLibraryView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CF37C75F5BE81C3BD45FE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46109A76DEDA521DE3C9123 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AC819D36D996572DB6A4BBCA /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				29735642BB42967A1DBD625E /* libPods-RPLPhotoLibraryView.a in Frameworks */,
 				FC43AEF961BBB0102D1A7C03 /* libPods.a in Frameworks */,
+				F3516BC02D52AECCB5A00239 /* Pods_RPLPhotoLibraryView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2AAF6AFA75907CC3B3A530F0 /* libPods-Tests.a in Frameworks */,
+				4E94934087563402E3FB53E0 /* Pods_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,9 +128,9 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				87A53A81ED12D0898770BB35 /* libPods-RPLPhotoLibraryView.a */,
-				44AD06CDEE7EE6AD7D494C8C /* libPods-Tests.a */,
 				A1CF37C75F5BE81C3BD45FE0 /* libPods.a */,
+				5A32EC94E2223515C1A8B7B4 /* Pods_RPLPhotoLibraryView.framework */,
+				1E261280A41A4E811819F373 /* Pods_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,6 +215,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				ED3BB8B6D1E9463280E62B47 /* Copy Pods Resources */,
+				208D3E8DA6AF2BFB74F96F88 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +235,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				C244A879770D3A86F7651290 /* Copy Pods Resources */,
+				B79423A123904C9E425878CA /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +304,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		208D3E8DA6AF2BFB74F96F88 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPLPhotoLibraryView/Pods-RPLPhotoLibraryView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A648B9F55B214631B6D1167B /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +347,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B79423A123904C9E425878CA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C244A879770D3A86F7651290 /* Copy Pods Resources */ = {
@@ -510,6 +542,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPLPhotoLibraryView/RPLPhotoLibraryView-Prefix.pch";
 				INFOPLIST_FILE = "RPLPhotoLibraryView/RPLPhotoLibraryView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -524,6 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPLPhotoLibraryView/RPLPhotoLibraryView-Prefix.pch";
 				INFOPLIST_FILE = "RPLPhotoLibraryView/RPLPhotoLibraryView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

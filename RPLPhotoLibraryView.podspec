@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RPLPhotoLibraryView"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "RPLPhotoLibraryView provides a UIView subclass that can shows the user's photos from their gallery in a collection view."
 #  s.description      = <<-DESC
 #                      An optional longer description of RPLPhotoLibraryView
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/Resplendent/RPLPhotoLibraryView.git", :tag => "v#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -34,5 +34,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit', 'AssetsLibrary'
-  s.dependency 'ResplendentUtilities', '0.1.1'
+  s.dependency 'ResplendentUtilities', '~> 0.2'
 end

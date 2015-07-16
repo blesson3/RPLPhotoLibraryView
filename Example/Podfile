@@ -1,17 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
-
-def import_pods
-	pod "RPLPhotoLibraryView", :path => "../"
-	
-	pod 'ResplendentUtilities', '0.1.1'
-end
-
-
-
+use_frameworks!
 
 target 'RPLPhotoLibraryView', :exclusive => true do
-  platform :ios, '6.0'
-  import_pods
+pod "RPLPhotoLibraryView", :path => "../"
 end
 
 target 'Tests', :exclusive => true do
@@ -21,5 +12,4 @@ target 'Tests', :exclusive => true do
   pod 'Expecta'
   pod 'FBSnapshotTestCase'
   pod 'Expecta+Snapshots'
-  import_pods
 end

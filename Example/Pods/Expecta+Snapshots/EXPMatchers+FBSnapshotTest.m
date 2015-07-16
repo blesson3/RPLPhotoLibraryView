@@ -30,7 +30,6 @@
 
 {
     FBSnapshotTestController *snapshotController = [[FBSnapshotTestController alloc] initWithTestClass:[testCase class]];
-    snapshotController.renderAsLayer = YES;
     snapshotController.recordMode = record;
     snapshotController.referenceImagesDirectory = referenceDirectory;
 
@@ -105,7 +104,7 @@ void setGlobalReferenceImageDir(char *reference) {
 // If you're bringing in Speca via CocoaPods
 // use the test path to get the test's image file URL
 
-#ifdef COCOAPODS_POD_AVAILABLE_Specta
+#if __has_include(<Specta/Specta.h>)
 #import <Specta/Specta.h>
 #import <Specta/SpectaUtility.h>
 #import <Specta/SPTExample.h>
@@ -219,8 +218,7 @@ EXPMatcherImplementationEnd
 
 
 EXPMatcherImplementationBegin(recordSnapshot, (void)) {
-    __block NSError *error = nil;
-
+    
     prerequisite(^BOOL{
         return NO;
     });
