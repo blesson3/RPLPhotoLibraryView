@@ -29,6 +29,7 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 @property (nonatomic, assign) BOOL isEnumeratingAssetsLibrary;
 
 @property (nonatomic, strong) ALAssetsGroup* currentAssetsGroup;
+-(NSInteger)assetIndexForIndexPath:(NSIndexPath*)indexPath;
 -(ALAsset*)assetAtIndexPath:(NSIndexPath*)indexPath;
 
 @property (nonatomic, readonly) UICollectionViewFlowLayout* collectionViewFlowLayout;
@@ -113,6 +114,39 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	return self.bounds;
 }
 
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:collectionViewWillBeginDragging:)])
+	{
+		[self.scrollDelegate photoLibraryView:self collectionViewWillBeginDragging:self.collectionView];
+	}
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:didScrollWithCollectionView:)])
+	{
+		[self.scrollDelegate photoLibraryView:self didScrollWithCollectionView:self.collectionView];
+	}
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:collectionViewWillEndDragging:withVelocity:targetContentOffset:)])
+	{
+		[self.scrollDelegate photoLibraryView:self collectionViewWillEndDragging:self.collectionView withVelocity:velocity targetContentOffset:targetContentOffset];
+	}
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+	if ([self.scrollDelegate respondsToSelector:@selector(photoLibraryView:collectionViewDidEndDragging:willDecelerate:)])
+	{
+		[self.scrollDelegate photoLibraryView:self collectionViewDidEndDragging:self.collectionView willDecelerate:decelerate];
+	}
+}
+
 #pragma mark - UICollectionViewDataSource,UICollectionViewDelegate
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -143,13 +177,11 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	__weak typeof(self) weakSelf = self;
 	[self.assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
 
-		RUDLog(@"!!");
 		*stop = YES;
 
 		if ((stopped == false) && (*stop == YES))
 		{
 			stopped = YES;
-			RUDLog(@"stopped");
 			if (weakSelf)
 			{
 				dispatch_async(dispatch_get_main_queue(), ^{
@@ -182,15 +214,33 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	[self.collectionView reloadData];
 }
 
-#pragma mark - Assets
+#pragma mark - Data Source
+-(NSInteger)assetIndexForIndexPath:(NSIndexPath*)indexPath
+{
+	NSInteger index = indexPath.row;
+
+	NSInteger numberOfAssets = self.currentAssetsGroup.numberOfAssets;
+	kRUConditionalReturn_ReturnValue(numberOfAssets == 0, YES, NSNotFound);
+	kRUConditionalReturn_ReturnValue(index >= numberOfAssets, YES, NSNotFound);
+
+	if (self.reverseAssetOrder)
+	{
+		index = numberOfAssets - 1 - index;
+	}
+
+	return index;
+}
+
 -(ALAsset*)assetAtIndexPath:(NSIndexPath*)indexPath
 {
 	kRUConditionalReturn_ReturnValueNil(self.currentAssetsGroup == nil, YES);
-	kRUConditionalReturn_ReturnValueNil((indexPath.row >= self.currentAssetsGroup.numberOfAssets), YES);
+
+	NSInteger index = [self assetIndexForIndexPath:indexPath];
+	kRUConditionalReturn_ReturnValueNil((index >= self.currentAssetsGroup.numberOfAssets), YES);
 	
 	__block ALAsset* asset = nil;
 	
-	[self.currentAssetsGroup enumerateAssetsAtIndexes:[NSIndexSet indexSetWithIndex:indexPath.row] options:NSEnumerationConcurrent usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+	[self.currentAssetsGroup enumerateAssetsAtIndexes:[NSIndexSet indexSetWithIndex:index] options:NSEnumerationConcurrent usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
 		if (result)
 		{
 			asset = result;
@@ -205,6 +255,16 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 -(void)scrollToTop:(BOOL)animated
 {
 	[self.collectionView setContentOffset:CGPointZero animated:animated];
+}
+
+#pragma mark - reverseAssetOrder
+-(void)setReverseAssetOrder:(BOOL)reverseAssetOrder
+{
+	kRUConditionalReturn(self.reverseAssetOrder == reverseAssetOrder, NO);
+
+	_reverseAssetOrder = reverseAssetOrder;
+
+	[self.collectionView reloadData];
 }
 
 @end
