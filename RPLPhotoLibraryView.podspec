@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RPLPhotoLibraryView"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "RPLPhotoLibraryView provides a UIView subclass that can shows the user's photos from their gallery in a collection view."
 #  s.description      = <<-DESC
 #                      An optional longer description of RPLPhotoLibraryView
