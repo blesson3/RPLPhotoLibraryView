@@ -1,15 +1,21 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+
+def import_pods
+	pod 'RPLPhotoLibraryView', :path => "../"
+end
+
+
 target 'RPLPhotoLibraryView', :exclusive => true do
-pod "RPLPhotoLibraryView", :path => "../"
+	import_pods
 end
 
 target 'Tests', :exclusive => true do
-  pod "RPLPhotoLibraryView", :path => "../"
+	import_pods
 
-  pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
+	pod 'Specta'
+	pod 'Expecta'
+	pod 'FBSnapshotTestCase'
+	pod 'Expecta+Snapshots'
 end

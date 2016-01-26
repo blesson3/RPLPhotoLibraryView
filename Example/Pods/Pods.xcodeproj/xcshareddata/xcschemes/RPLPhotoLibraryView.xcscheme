@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F1489719A8DA63E66EAA7EA6'
+               BlueprintIdentifier = 'F3FBAB272098189C31CD0965'
                BlueprintName = 'RPLPhotoLibraryView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'RPLPhotoLibraryView.framework'>
