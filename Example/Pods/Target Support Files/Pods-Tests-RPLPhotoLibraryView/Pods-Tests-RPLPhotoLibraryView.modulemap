@@ -1,6 +1,0 @@
-framework module RPLPhotoLibraryView {
-  umbrella header "Pods-Tests-RPLPhotoLibraryView-umbrella.h"
-
-  export *
-  module * { export * }
-}

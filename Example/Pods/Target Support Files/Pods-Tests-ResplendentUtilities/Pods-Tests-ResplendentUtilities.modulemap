@@ -1,6 +1,0 @@
-framework module ResplendentUtilities {
-  umbrella header "Pods-Tests-ResplendentUtilities-umbrella.h"
-
-  export *
-  module * { export * }
-}
