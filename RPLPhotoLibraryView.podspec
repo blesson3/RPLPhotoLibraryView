@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Resplendent/RPLPhotoLibraryView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "BenMaer" => "ben@resplendent.co" }
+  s.author           = { "Benjamin Maer" => "ben@resplendent.co" }
   s.source           = { :git => "https://github.com/Resplendent/RPLPhotoLibraryView.git", :tag => "v#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -34,5 +34,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit', 'AssetsLibrary'
-  s.dependency 'ResplendentUtilities', '~> 0.2'
+  s.dependency 'ResplendentUtilities', '~> 0.4.0'
 end

@@ -5,7 +5,7 @@
   "homepage": "https://github.com/Resplendent/RPLPhotoLibraryView",
   "license": "MIT",
   "authors": {
-    "BenMaer": "ben@resplendent.co"
+    "Benjamin Maer": "ben@resplendent.co"
   },
   "source": {
     "git": "https://github.com/Resplendent/RPLPhotoLibraryView.git",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "ResplendentUtilities": [
-      "~> 0.2"
+      "~> 0.4.0"
     ]
   }
 }
