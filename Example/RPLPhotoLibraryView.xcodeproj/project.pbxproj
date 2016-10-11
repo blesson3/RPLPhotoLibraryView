@@ -12,17 +12,16 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* RPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RPLAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* RPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RPLViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8CE85D76E6B2C15BAA87908F /* Pods_RPLPhotoLibraryView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F1378E7DB9E929F3CAF61F /* Pods_RPLPhotoLibraryView_Example.framework */; };
 		C6D48617324E97683DDF02E0 /* Pods_RPLPhotoLibraryView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CBD9DD8DF566D3D574A11A /* Pods_RPLPhotoLibraryView_Tests.framework */; };
+		D78A61DF1DAD603F00A74075 /* RPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D78A61DB1DAD603F00A74075 /* RPLAppDelegate.m */; };
+		D78A61E01DAD603F00A74075 /* RPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D78A61DE1DAD603F00A74075 /* RPLViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +46,6 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* RPLPhotoLibraryView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPLPhotoLibraryView-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* RPLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPLAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* RPLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPLAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* RPLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPLViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* RPLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPLViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* RPLPhotoLibraryView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPLPhotoLibraryView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,8 +56,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		782B2CF3B43D9CF1C2C7C0E7 /* Pods-RPLPhotoLibraryView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPLPhotoLibraryView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPLPhotoLibraryView_Tests/Pods-RPLPhotoLibraryView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C30C10458EEDE1F6D72A8FF /* Pods-RPLPhotoLibraryView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPLPhotoLibraryView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPLPhotoLibraryView_Tests/Pods-RPLPhotoLibraryView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		93F1378E7DB9E929F3CAF61F /* Pods_RPLPhotoLibraryView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPLPhotoLibraryView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78A61DA1DAD603F00A74075 /* RPLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLAppDelegate.h; sourceTree = "<group>"; };
+		D78A61DB1DAD603F00A74075 /* RPLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLAppDelegate.m; sourceTree = "<group>"; };
+		D78A61DD1DAD603F00A74075 /* RPLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLViewController.h; sourceTree = "<group>"; };
+		D78A61DE1DAD603F00A74075 /* RPLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLViewController.m; sourceTree = "<group>"; };
 		DED7EA03D020E27759071167 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F0CBD9DD8DF566D3D574A11A /* Pods_RPLPhotoLibraryView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPLPhotoLibraryView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,11 +139,7 @@
 		6003F593195388D20070C39A /* Example for RPLPhotoLibraryView */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* RPLAppDelegate.h */,
-				6003F59D195388D20070C39A /* RPLAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* RPLViewController.h */,
-				6003F5A6195388D20070C39A /* RPLViewController.m */,
+				D78A61D81DAD603F00A74075 /* Code */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -191,6 +185,33 @@
 				011BA8AF3A19E88A577FAD39 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		D78A61D81DAD603F00A74075 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				D78A61D91DAD603F00A74075 /* UIApplicationDelegate */,
+				D78A61DC1DAD603F00A74075 /* UIViewController */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		D78A61D91DAD603F00A74075 /* UIApplicationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D78A61DA1DAD603F00A74075 /* RPLAppDelegate.h */,
+				D78A61DB1DAD603F00A74075 /* RPLAppDelegate.m */,
+			);
+			path = UIApplicationDelegate;
+			sourceTree = "<group>";
+		};
+		D78A61DC1DAD603F00A74075 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D78A61DD1DAD603F00A74075 /* RPLViewController.h */,
+				D78A61DE1DAD603F00A74075 /* RPLViewController.m */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -393,9 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* RPLAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* RPLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				D78A61DF1DAD603F00A74075 /* RPLAppDelegate.m in Sources */,
+				D78A61E01DAD603F00A74075 /* RPLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

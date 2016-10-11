@@ -7,13 +7,24 @@
 //
 
 #import "RPLAppDelegate.h"
+#import "RPLViewController.h"
+
+
+
+
 
 @implementation RPLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+	UIWindow* window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+	[window setBackgroundColor:[UIColor redColor]];
+	[window setRootViewController:[RPLViewController new]];
+	
+	[self setWindow:window];
+	[self.window makeKeyAndVisible];
+
+	return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
