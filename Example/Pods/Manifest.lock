@@ -1,6 +1,6 @@
 PODS:
   - ResplendentUtilities (0.5.0)
-  - RPLPhotoLibraryView (0.1.3):
+  - RPLPhotoLibraryView (0.1.4):
     - ResplendentUtilities (~> 0.5.0)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ResplendentUtilities: df8bb038d91568f9e82ee88ba5796d5d68014cdf
-  RPLPhotoLibraryView: 9f06dcc87c49f478ec26e5afbe12bccc1184ec7b
+  RPLPhotoLibraryView: '010597da2e751793b9c6aed6675f0da8e483e1e4'
 
 PODFILE CHECKSUM: 39bcffad94cbd64edc6dec6c8a868fccaa6049fe
 
