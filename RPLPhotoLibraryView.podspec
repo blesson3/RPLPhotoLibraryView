@@ -18,6 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+Provides `RPLPhotoLibraryView`, a class which shows the users gallery images in a collection view with 3 columns, and scrolls vertically.
+
+Can flip the order with property `reverseAssetOrder`, and can be told to scroll to the top of the colleciton view.
+
+Offers two delegates:
+* `assetSelectionDelegate` - for handling when the user selects an asset.
+* `scrollDelegate` - offers a few methods for handling scrolling events.
 TODO: Add long description of the pod here.
                        DESC
 
