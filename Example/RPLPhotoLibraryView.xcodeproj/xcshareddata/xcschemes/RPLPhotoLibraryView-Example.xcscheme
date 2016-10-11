@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "RPLPhotoLibraryView.app"
-               BlueprintName = "RPLPhotoLibraryView"
+               BuildableName = "RPLPhotoLibraryView_Example.app"
+               BlueprintName = "RPLPhotoLibraryView_Example"
                ReferencedContainer = "container:RPLPhotoLibraryView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BuildableName = "RPLPhotoLibraryView_Tests.xctest"
+               BlueprintName = "RPLPhotoLibraryView_Tests"
                ReferencedContainer = "container:RPLPhotoLibraryView.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RPLPhotoLibraryView.app"
-            BlueprintName = "RPLPhotoLibraryView"
+            BuildableName = "RPLPhotoLibraryView_Example.app"
+            BlueprintName = "RPLPhotoLibraryView_Example"
             ReferencedContainer = "container:RPLPhotoLibraryView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RPLPhotoLibraryView.app"
-            BlueprintName = "RPLPhotoLibraryView"
+            BuildableName = "RPLPhotoLibraryView_Example.app"
+            BlueprintName = "RPLPhotoLibraryView_Example"
             ReferencedContainer = "container:RPLPhotoLibraryView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RPLPhotoLibraryView.app"
-            BlueprintName = "RPLPhotoLibraryView"
+            BuildableName = "RPLPhotoLibraryView_Example.app"
+            BlueprintName = "RPLPhotoLibraryView_Example"
             ReferencedContainer = "container:RPLPhotoLibraryView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -1,11 +1,11 @@
 # RPLPhotoLibraryView
 
-[![CI Status](http://img.shields.io/travis/BenMaer/RPLPhotoLibraryView.svg?style=flat)](https://travis-ci.org/BenMaer/RPLPhotoLibraryView)
-[![Version](https://img.shields.io/cocoapods/v/RPLPhotoLibraryView.svg?style=flat)](http://cocoadocs.org/docsets/RPLPhotoLibraryView)
-[![License](https://img.shields.io/cocoapods/l/RPLPhotoLibraryView.svg?style=flat)](http://cocoadocs.org/docsets/RPLPhotoLibraryView)
-[![Platform](https://img.shields.io/cocoapods/p/RPLPhotoLibraryView.svg?style=flat)](http://cocoadocs.org/docsets/RPLPhotoLibraryView)
+[![CI Status](http://img.shields.io/travis/Benjamin Maer/RPLPhotoLibraryView.svg?style=flat)](https://travis-ci.org/Benjamin Maer/RPLPhotoLibraryView)
+[![Version](https://img.shields.io/cocoapods/v/RPLPhotoLibraryView.svg?style=flat)](http://cocoapods.org/pods/RPLPhotoLibraryView)
+[![License](https://img.shields.io/cocoapods/l/RPLPhotoLibraryView.svg?style=flat)](http://cocoapods.org/pods/RPLPhotoLibraryView)
+[![Platform](https://img.shields.io/cocoapods/p/RPLPhotoLibraryView.svg?style=flat)](http://cocoapods.org/pods/RPLPhotoLibraryView)
 
-## Usage
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -16,13 +16,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 RPLPhotoLibraryView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-    pod "RPLPhotoLibraryView"
+```ruby
+pod "RPLPhotoLibraryView"
+```
 
 ## Author
 
-BenMaer, ben@resplendent.co
+Benjamin Maer, ben@resplendent.co
 
 ## License
 
 RPLPhotoLibraryView is available under the MIT license. See the LICENSE file for more info.
-
