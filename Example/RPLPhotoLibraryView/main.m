@@ -2,12 +2,11 @@
 //  main.m
 //  RPLPhotoLibraryView
 //
-//  Created by BenMaer on 03/13/2015.
-//  Copyright (c) 2014 BenMaer. All rights reserved.
+//  Created by Benjamin Maer on 10/11/2016.
+//  Copyright (c) 2016 Benjamin Maer. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+@import UIKit;
 #import "RPLAppDelegate.h"
 
 int main(int argc, char * argv[])

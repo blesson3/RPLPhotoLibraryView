@@ -2,42 +2,34 @@
 //  RPLPhotoLibraryViewTests.m
 //  RPLPhotoLibraryViewTests
 //
-//  Created by BenMaer on 03/13/2015.
-//  Copyright (c) 2014 BenMaer. All rights reserved.
+//  Created by Benjamin Maer on 10/11/2016.
+//  Copyright (c) 2016 Benjamin Maer. All rights reserved.
 //
 
-SpecBegin(InitialSpecs)
+@import XCTest;
 
-describe(@"these will fail", ^{
+@interface Tests : XCTestCase
 
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
-    });
+@end
 
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
-    });
-    
-    it(@"will wait and fail", ^AsyncBlock {
-        
-    });
-});
+@implementation Tests
 
-describe(@"these will pass", ^{
-    
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
-    });
-    
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"will wait and succeed", ^AsyncBlock {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-            done();
-        });
-    });
-});
+- (void)setUp
+{
+    [super setUp];
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+}
 
-SpecEnd
+- (void)tearDown
+{
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    [super tearDown];
+}
+
+- (void)testExample
+{
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+@end
+
