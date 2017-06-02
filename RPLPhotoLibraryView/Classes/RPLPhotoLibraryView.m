@@ -50,7 +50,7 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 		[self.collectionViewFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
 		[self.collectionViewFlowLayout setMinimumInteritemSpacing:0.0f];
 		
-		self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewFlowLayout];
+		_collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewFlowLayout];
 		[self.collectionView setDelegate:self];
 		[self.collectionView setDataSource:self];
 		[self.collectionView registerClass:[RPLPhotoLibraryCollectionViewCell class] forCellWithReuseIdentifier:kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionViewCell];
