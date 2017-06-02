@@ -14,13 +14,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 
 
-
-
-
 NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionViewCell = @"cellIdentifier_RPLPhotoLibraryCollectionViewCell";
-
-
-
 
 
 @interface RPLPhotoLibraryView () <UICollectionViewDataSource,UICollectionViewDelegate>
@@ -32,19 +26,14 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 -(NSInteger)assetIndexForIndexPath:(NSIndexPath*)indexPath;
 -(ALAsset*)assetAtIndexPath:(NSIndexPath*)indexPath;
 
-@property (nonatomic, readonly) UICollectionViewFlowLayout* collectionViewFlowLayout;
-@property (nonatomic, readonly) CGFloat collectionViewFlowLayoutItemPadding;
-@property (nonatomic, readonly) CGSize collectionViewFlowLayoutItemSize;
-@property (nonatomic, readonly) NSUInteger collectionViewFlowLayoutNumberOfColumns;
 
-@property (nonatomic, readonly) UICollectionView* collectionView;
+//@property (nonatomic, readonly) CGFloat collectionViewFlowLayoutItemPadding;
+//@property (nonatomic, readonly) CGSize collectionViewFlowLayoutItemSize;
+//@property (nonatomic, readonly) NSUInteger collectionViewFlowLayoutNumberOfColumns;
+
 @property (nonatomic, readonly) CGRect collectionViewFrame;
 
--(void)loadAssetGroup;
-
 @end
-
-
 
 
 
@@ -57,18 +46,16 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	{
 		_assetsLibrary = [ALAssetsLibrary new];
 
-		_collectionViewFlowLayout = [UICollectionViewFlowLayout new];
+		self.collectionViewFlowLayout = [UICollectionViewFlowLayout new];
 		[self.collectionViewFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
 		[self.collectionViewFlowLayout setMinimumInteritemSpacing:0.0f];
 		
-		_collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewFlowLayout];
+		self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewFlowLayout];
 		[self.collectionView setDelegate:self];
 		[self.collectionView setDataSource:self];
 		[self.collectionView registerClass:[RPLPhotoLibraryCollectionViewCell class] forCellWithReuseIdentifier:kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionViewCell];
 		[self.collectionView setBackgroundColor:[UIColor clearColor]];
 		[self addSubview:self.collectionView];
-
-		[self loadAssetGroup];
 	}
 
 	return self;
@@ -78,36 +65,36 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 {
 	[super layoutSubviews];
 
-	[self.collectionViewFlowLayout setMinimumLineSpacing:self.collectionViewFlowLayoutItemPadding];
-	[self.collectionViewFlowLayout setItemSize:self.collectionViewFlowLayoutItemSize];
+//	[self.collectionViewFlowLayout setMinimumLineSpacing:self.collectionViewFlowLayoutItemPadding];
+//	[self.collectionViewFlowLayout setItemSize:self.collectionViewFlowLayoutItemSize];
 	[self.collectionView setFrame:self.collectionViewFrame];
 }
 
 #pragma mark - Frames
--(CGFloat)collectionViewFlowLayoutItemPadding
-{
-	return 4.0f;
-}
-
--(NSUInteger)collectionViewFlowLayoutNumberOfColumns
-{
-	return 3.0f;
-}
-
--(CGSize)collectionViewFlowLayoutItemSize
-{
-	CGFloat collectionViewFlowLayoutItemPadding = self.collectionViewFlowLayoutItemPadding;
-	NSUInteger collectionViewFlowLayoutNumberOfColumns = self.collectionViewFlowLayoutNumberOfColumns;
-	CGFloat collectionViewFlowLayoutNumberOfColumns_float = collectionViewFlowLayoutNumberOfColumns;
-	CGRect collectionViewFrame = self.collectionViewFrame;
-	
-	CGFloat itemDimensionLength = (CGRectGetWidth(collectionViewFrame) - ((collectionViewFlowLayoutNumberOfColumns_float - 1) * collectionViewFlowLayoutItemPadding)) / collectionViewFlowLayoutNumberOfColumns_float;
-	
-	return (CGSize){
-		.width		= itemDimensionLength,
-		.height		= itemDimensionLength,
-	};
-}
+//-(CGFloat)collectionViewFlowLayoutItemPadding
+//{
+//	return 4.0f;
+//}
+//
+//-(NSUInteger)collectionViewFlowLayoutNumberOfColumns
+//{
+//	return 3.0f;
+//}
+//
+//-(CGSize)collectionViewFlowLayoutItemSize
+//{
+//	CGFloat collectionViewFlowLayoutItemPadding = self.collectionViewFlowLayoutItemPadding;
+//	NSUInteger collectionViewFlowLayoutNumberOfColumns = self.collectionViewFlowLayoutNumberOfColumns;
+//	CGFloat collectionViewFlowLayoutNumberOfColumns_float = collectionViewFlowLayoutNumberOfColumns;
+//	CGRect collectionViewFrame = self.collectionViewFrame;
+//	
+//	CGFloat itemDimensionLength = (CGRectGetWidth(collectionViewFrame) - ((collectionViewFlowLayoutNumberOfColumns_float - 1) * collectionViewFlowLayoutItemPadding)) / collectionViewFlowLayoutNumberOfColumns_float;
+//	
+//	return (CGSize){
+//		.width		= itemDimensionLength,
+//		.height		= itemDimensionLength,
+//	};
+//}
 
 -(CGRect)collectionViewFrame
 {

@@ -10,9 +10,6 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 
 
-
-
-
 @interface RPLPhotoLibraryCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) ALAsset* asset;

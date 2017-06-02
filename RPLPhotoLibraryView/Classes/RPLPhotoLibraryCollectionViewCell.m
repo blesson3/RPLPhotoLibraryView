@@ -9,18 +9,12 @@
 #import "RPLPhotoLibraryCollectionViewCell.h"
 
 
-
-
-
 @interface RPLPhotoLibraryCollectionViewCell ()
 
 @property (nonatomic, readonly) UIImageView* imageView;
 @property (nonatomic, readonly) CGRect imageViewFrame;
 
 @end
-
-
-
 
 
 @implementation RPLPhotoLibraryCollectionViewCell

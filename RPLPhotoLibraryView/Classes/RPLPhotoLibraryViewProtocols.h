@@ -9,14 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-
-
-
-
 @class RPLPhotoLibraryView;
-
-
-
 
 
 @protocol RPLPhotoLibraryView_assetSelectionDelegate <NSObject>
@@ -24,9 +17,6 @@
 -(void)photoLibraryView:(RPLPhotoLibraryView*)photoLibraryView didSelectAsset:(ALAsset*)asset;
 
 @end
-
-
-
 
 
 @protocol RPLPhotoLibraryView_scrollDelegate <NSObject>
