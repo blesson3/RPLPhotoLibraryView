@@ -46,11 +46,11 @@ NSString* const kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionVie
 	{
 		_assetsLibrary = [ALAssetsLibrary new];
 
-		self.collectionViewFlowLayout = [UICollectionViewFlowLayout new];
-		[self.collectionViewFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-		[self.collectionViewFlowLayout setMinimumInteritemSpacing:0.0f];
-		
-		_collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewFlowLayout];
+//		self.collectionViewFlowLayout = [UICollectionViewFlowLayout new];
+//		[self.collectionViewFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+//		[self.collectionViewFlowLayout setMinimumInteritemSpacing:0.0f];
+//		
+		_collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero];
 		[self.collectionView setDelegate:self];
 		[self.collectionView setDataSource:self];
 		[self.collectionView registerClass:[RPLPhotoLibraryCollectionViewCell class] forCellWithReuseIdentifier:kRPLPhotoLibraryView_cellIdentifier_RPLPhotoLibraryCollectionViewCell];

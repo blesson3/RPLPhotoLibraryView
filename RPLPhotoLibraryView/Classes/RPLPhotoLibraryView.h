@@ -11,7 +11,7 @@
 
 @interface RPLPhotoLibraryView : UIView
 
-@property (nonatomic, assign) UICollectionViewFlowLayout* collectionViewFlowLayout;
+//@property (nonatomic, assign) UICollectionViewFlowLayout* collectionViewFlowLayout;
 @property (nonatomic, readonly) UICollectionView* collectionView;
 @property (nonatomic, assign) id<RPLPhotoLibraryView_assetSelectionDelegate> assetSelectionDelegate;
 @property (nonatomic, assign) id<RPLPhotoLibraryView_scrollDelegate> scrollDelegate;
